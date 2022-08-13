@@ -115,7 +115,7 @@ const App = () => {
             <p className="italic">Expires: {buildExpiredDate()}</p>
           </div>
 
-          <div>
+          <div className="c-add-top-bottom-spacing-small-screen">
             <div className="text-red-600 font-bold capitalize text-3xl">
               {handlers.map((handler) => (
                 <p key={handler}>{handler}</p>
