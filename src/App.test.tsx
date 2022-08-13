@@ -10,9 +10,9 @@ describe('renders app', () => {
     expect(el[0]).toBeInTheDocument();
   });
 
-  test('should load image', async () => {
+  test('should load image', () => {
     render(<App />);
-    const image = await screen.findByAltText(/the service dog/i);
+    const image = screen.getByAltText(/the service dog/i);
     expect(image).toBeInTheDocument();
   });
 
