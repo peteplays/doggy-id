@@ -6,7 +6,7 @@ describe('renders app', () => {
   test('should load title text', () => {
     render(<App />);
     const el = screen.getAllByText(/service dog/i);
-    expect(el).toHaveLength(3);
+    expect(el).toHaveLength(4);
     expect(el[0]).toBeInTheDocument();
   });
 
