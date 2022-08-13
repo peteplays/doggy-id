@@ -83,7 +83,7 @@ const App = () => {
   const { dogName, dogImage, handlers, phone, city, state } = data;
 
   return (
-    <div className="container mx-auto my-4 border-red-600 border-2 p-1 rounded-lg">
+    <div className="container max-w-3xl mx-auto my-4 border-red-600 border-2 p-1 rounded-lg">
       <div className="grid grid-cols-3 bg-red-600 rounded-t-md p-4">
         <div className="col-start-1 col-end-2 text-center text-white font-bold uppercase text-4xl">
           <p>service dog</p>
