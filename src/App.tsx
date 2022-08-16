@@ -1,15 +1,7 @@
 import { Fragment } from 'react';
 
 import { data } from './data';
-
-const buildExpiredDate = () => {
-  const today = new Date();
-
-  const monthCal = today.getMonth() + 8;
-  const month = monthCal > 12 ? monthCal - 12 : monthCal;
-
-  return `${today.getFullYear() + 1}-${month > 9 ? month : `0${month}`}-07`;
-};
+import { buildExpiredDate } from './utils';
 
 const getStamp = () => (
   <svg width="132" height="132">
